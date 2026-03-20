@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+# ... existing config ...
+
+[rpc_endpoints]
+alfajores = "https://alfajores-forno.celo-testnet.org"
+mainnet = "https://forno.celo.org"
+
+[etherscan]
+celo = { key = "${CELO_SCAN_API_KEY}", chainId = 44787 }
+alfajores = { key = "${CELO_SCAN_API_KEY}", chainId = 44787, url = "https://alfajores.celoscan.io/" }
